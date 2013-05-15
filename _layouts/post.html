@@ -1,15 +1,16 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
-<head>
-   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-   <title>{{ site.title }} - {{ page.title }}</title>
-   <meta name="author" content="Filippo Vitale" />
-</head>
-<body>
+---
+layout: default
+---
+<article>
 
-<h3>This is a POST</h3>
+  <header>
+    <time datetime="{{ page.date | date:'%F' }}" pubdate>{{ page.date | date:'%e %b %Y' }}</time>
+    <div class="g-plusone" data-size="small"></div>
+    <h1>
+      <a href="{{ page.url }}" rel="bookmark" title="{{ page.title }}">{{ page.title }}</a>
+    </h1>
+  </header>
 
-{{ content }}
+  {{ content }}
 
-</body>
-</html>
+</article>
