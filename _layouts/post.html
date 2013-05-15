@@ -4,11 +4,12 @@ layout: default
 <article>
 
   <header>
-    <time datetime="{{ page.date | date:'%F' }}" pubdate>{{ page.date | date:'%e %b %Y' }}</time>
-    <div class="g-plusone" data-size="small"></div>
     <h1>
       <a href="{{ page.url }}" rel="bookmark" title="{{ page.title }}">{{ page.title }}</a>
     </h1>
+    <time datetime="{{ page.date | date:'%F' }}" pubdate>{{ page.date | date:'%e %b %Y' }}</time>
+    <div class="g-plusone" data-size="small"></div>
+    <div>Author: <a href="https://plus.google.com/113126618814932185508?rel=author" rel="author">{{ site.author.name }}</a></div>
   </header>
 
   {{ content }}
