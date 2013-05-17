@@ -6,6 +6,7 @@ category : personal
 #### Todo
 * http://jsbin.com/efayor/3
 * http://www.colorcombos.com/color-scheme-196.html
+* style to be copied: http://joelhooks.com/
 * http://nmsdvid.com/snippets/
 * http://jsbin.com/umedes/3 - http://jsbin.com/umedes/3/edit
 * http://jsbin.com/itubeb/1
