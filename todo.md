@@ -5,9 +5,13 @@ category : personal
 
 #### Todo
 * http://jsbin.com/efayor/3
+* http://www.colorcombos.com/color-scheme-196.html
+* style to be copied: http://joelhooks.com/
+* http://nmsdvid.com/snippets/
 * http://jsbin.com/umedes/3 - http://jsbin.com/umedes/3/edit
 * http://jsbin.com/itubeb/1
 * http://codepen.io/hugo/pen/hFxtA
+* http://codepen.io/soulwire/showcase
 * [Solarized/highlight.js](http://softwaremaniacs.org/soft/highlight/en/)
 * does Pygments need a plugin installed?
 * [license idea](https://github.com/mojombo/mojombo.github.io)
@@ -21,7 +25,9 @@ category : personal
 * https://plus.google.com/authorship
 * comment
 * https://developers.google.com/+/web/+1button/
-* prefetch DNS <link rel="dns-prefetch" href="//fonts.googleapis.com">
+* prefetch DNS ```<link rel="dns-prefetch" href="//fonts.googleapis.com">```
 * Load Webfonts asynchronously
-* <link rel="alternate" type="application/atom+xml" title="My Weblog feed" href="/feed/" />
-* <link rel="search" type="application/opensearchdescription+xml" title="My Weblog search" href="opensearch.xml" />
+* ```<link rel="alternate" type="application/atom+xml" title="My Weblog feed" href="/feed/" />```
+* ```<link rel="search" type="application/opensearchdescription+xml" title="My Weblog search" href="opensearch.xml" />```
+* http://soulwire.co.uk/experiments
+* https://github.com/soulwire
