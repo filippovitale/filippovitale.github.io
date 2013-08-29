@@ -31,3 +31,24 @@ category : personal
 * ```<link rel="search" type="application/opensearchdescription+xml" title="My Weblog search" href="opensearch.xml" />```
 * http://soulwire.co.uk/experiments
 * https://github.com/soulwire
+* 
+
+## Typography
+```
+/* smashing magazine */
+color: rgb(51, 51, 51);
+font-family: 'Proxima Nova Regular', 'Helvetica Neue', Calibri, 'Droid Sans', Helvetica, Arial, sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: normal;
+line-height: 22.390625px;
+```
+```
+/* jekyll */
+color: rgb(221, 221, 221);
+font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+font-size: 21px;
+font-weight: 300;
+line-height: 31.5px;
+text-shadow: rgba(0, 0, 0, 0.498039) 0px 1px 3px;
+```
