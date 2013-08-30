@@ -8,12 +8,12 @@ category : personal
 * http://www.colorcombos.com/color-scheme-196.html
 * style to be copied: http://joelhooks.com/
 * http://nmsdvid.com/snippets/
+* [tag nice style](http://blog.leonardfactory.com/)
 * http://jsbin.com/umedes/3 - http://jsbin.com/umedes/3/edit
 * http://jsbin.com/itubeb/1
 * http://codepen.io/hugo/pen/hFxtA
 * http://codepen.io/soulwire/showcase
 * [Solarized/highlight.js](http://softwaremaniacs.org/soft/highlight/en/)
-* does Pygments need a plugin installed?
 * [license idea](https://github.com/mojombo/mojombo.github.io)
 * choose [webfont](http://www.awwwards.com/best-20-webfonts-from-google-web-fonts-and-font-face-embedding.html)
 * get inspired by other [jekyll examples](https://github.com/mojombo/jekyll/wiki/Sites)
