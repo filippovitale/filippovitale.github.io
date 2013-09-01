@@ -52,3 +52,7 @@ font-weight: 300;
 line-height: 31.5px;
 text-shadow: rgba(0, 0, 0, 0.498039) 0px 1px 3px;
 ```
+
+## SEO
+* http://www.google.com/webmasters/tools/richsnippets
+* http://polldaddy.com/features/#ratings
