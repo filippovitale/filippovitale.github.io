@@ -56,3 +56,7 @@ text-shadow: rgba(0, 0, 0, 0.498039) 0px 1px 3px;
 ## SEO
 * http://www.google.com/webmasters/tools/richsnippets
 * http://polldaddy.com/features/#ratings
+
+## Special Effect
+* http://wagerfield.github.io/parallax/
+* 
