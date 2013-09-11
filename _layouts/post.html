@@ -9,9 +9,20 @@ layout: default
     </h1>
     <time datetime="{{ page.date | date:'%F' }}" pubdate>{{ page.date | date:'%e %b %Y' }}</time>
     <div class="g-plusone" data-size="small"></div>
-    <div>Author: <a href="https://plus.google.com/113126618814932185508?rel=author" rel="author">{{ site.author.name }}</a></div>
+    <!--{{ page.date | date_to_string }} -->
+    <div>Author: <a href="https://plus.google.com/113126618814932185508?rel=author" rel="author">By {{ site.author.name }}</a></div>
   </header>
 
   {{ content }}
 
+  <hr/>
+  <!--<div style="width: 100%; text-align: center; display: block;">-->
+  <div class="">
+    <div class="g-comments"
+         data-href="{{ site.url }}{{ page.url }}"
+         data-width="400"
+         data-first_party_property="BLOGGER"
+         data-view_type="FILTERED_POSTMOD">
+    </div>
+  </div>
 </article>
