@@ -9,4 +9,4 @@ author :
   twitter : filippovitale
 
 root: /
-permalink: /:year/:title/
+permalink: /article/:title/

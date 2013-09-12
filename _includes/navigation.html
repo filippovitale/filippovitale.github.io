@@ -15,14 +15,10 @@
       <li class="active"><a href="/">Home</a></li>
       {% else %}
       <li><a href="/">Home</a></li>
-      {% endif %} {% if page.nav == 'about' %}
-      <li class="active"><a href="/about.html">About</a></li>
+      {% endif %} {% if page.title == 'Articles' %}
+      <li class="active"><a href="/article/">Articles</a></li>
       {% else %}
-      <li><a href="/about.html">About</a></li>
-      {% endif %} {% if page.nav == 'blog' %}
-      <li class="active"><a href="/blog/">Blog</a></li>
-      {% else %}
-      <li><a href="/blog/">Blog</a></li>
+      <li><a href="/article/">Articles</a></li>
       {% endif %}
     </ul>
   </div>
