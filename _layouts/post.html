@@ -1,28 +1,46 @@
 ---
 layout: default
 ---
-<article>
+
+<div style="padding-top: 18px;">
+  <div class="col-lg-offset-2 col-lg-8 col-xs-12">
+    {% include navigation.html %}
+  </div>
+</div>
+
+<article class="col-lg-offset-3 col-lg-5 col-md-offset-2 col-md-8 col-xs-12">
 
   <header>
     <h1>
       <a href="{{ page.url }}" rel="bookmark" title="{{ page.title }}">{{ page.title }}</a>
     </h1>
-    <time datetime="{{ page.date | date:'%F' }}" pubdate>{{ page.date | date:'%e %b %Y' }}</time>
-    <div class="g-plusone" data-size="small"></div>
-    <!--{{ page.date | date_to_string }} -->
-    <div>Author: <a href="https://plus.google.com/113126618814932185508?rel=author" rel="author">By {{ site.author.name }}</a></div>
+
+    <div>
+      <a href="https://plus.google.com/113126618814932185508?rel=author" rel="author">By {{ site.author.name }}</a> —
+      <time datetime="{{ page.date | date:'%F' }}" pubdate>{{ page.date | date:'%e %b %Y' }}</time>
+    </div>
   </header>
 
-  {{ content }}
-
   <hr/>
-  <!--<div style="width: 100%; text-align: center; display: block;">-->
-  <div class="">
+  {{ content }}
+  <hr/>
+
+  <nav>
+    <a href="/article" rel="index up">Articles</a> ›
+    <a href="{{ page.url }}">{{ page.title }}</a>
+  </nav>
+
+  <div id="social" class="text-right">
+    <div class="g-plusone" data-size="small"></div>
+  </div>
+
+  <div style="width: 100%; padding: 20px; display: block;" class="text-center">
     <div class="g-comments"
          data-href="{{ site.url }}{{ page.url }}"
-         data-width="400"
+         data-width="600"
          data-first_party_property="BLOGGER"
          data-view_type="FILTERED_POSTMOD">
     </div>
   </div>
+
 </article>
