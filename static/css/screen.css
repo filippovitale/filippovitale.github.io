@@ -21,58 +21,58 @@ html, body {
 
 /* ********************************** Home ********************************** */
 
-#HomeBackground {
+#home-background {
   position: fixed;
   height: 100%;
   width: 100%;
 }
 
-#Home {
+#home {
   height: 100%;
+  padding-top: 12px;
 }
 
-#Home h2 {
+#home h2 {
   color: #ffffff;
   display: block;
   vertical-align: middle;
   text-shadow: black 0px 0px 5px;
 }
 
-#Home h2 span {
+#home h2 span {
   letter-spacing: -1px;
   background: rgba(0, 0, 0, 0.7);
   padding: 10px;
   line-height: 1.85em;
 }
 
-#Home h3 {
+#home h3 {
   color: #ffffff;
   display: block;
   vertical-align: middle;
   text-shadow: rgba(0, 0, 0, .8) 0px 0px 10px;
 }
 
-#Home footer {
+#home footer {
   margin-top: 30%;
 }
 
-#Home footer p {
+#home footer p {
   color: #999;
 }
 
-/*
-#Home section {
-  display: inline-block !important;
-  vertical-align: middle !important;
-  float: none !important;
+#hero {
+  display: table;
+  height: 90%;
 }
-*/
 
-/*****************************************************************************/
-/*
-/* Site
-/*
-/*****************************************************************************/
+#hero > div {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* ********************************** Site ********************************** */
 
 #Logo {
   background-color: #000;
@@ -109,7 +109,7 @@ html, body {
     height: 80%;
   }
 
-  #Home {
+  #home {
     overflow: scroll;
     height: 100%;
   }
