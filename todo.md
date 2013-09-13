@@ -33,6 +33,10 @@ category : personal
 * https://github.com/soulwire
 * 
 
+## Layout
+* find out why comment div is not responsive
+** http://r7.web.id/get-responsive-google-plus-comments
+
 ## Typography
 ```
 /* smashing magazine */
