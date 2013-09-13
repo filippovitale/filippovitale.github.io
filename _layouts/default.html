@@ -2,7 +2,7 @@
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
 <!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
 <!--[if IE 8]><html class="no-js lt-ie9"><![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"><!--<![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js"><!--<![endif]-->
 <head>
   <meta charset="utf-8"/>
   <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
@@ -12,8 +12,7 @@
   <meta name="viewport" content="width=device-width">
 
   <title>
-    {{ page.title }}
-    {{ site.title }}
+    {% if page.title == 'Home' %} {{ site.title }} {% else %} {{ page.title }} {% endif %}
   </title>
 
   <link rel="stylesheet" href="/static/css/lib/bootstrap-3.0.0.min.css">
@@ -27,24 +26,24 @@
 </head>
 <body>
 
-  {{content}}
+{{content}}
 
-  <script src="/static/js/lib/bootstrap-3.0.0.min.js"></script>
-  <script type="text/javascript">
-    (function () {
-      var po = document.createElement('script');
-      po.type = 'text/javascript';
-      po.async = true;
-      po.src = 'https://apis.google.com/js/plusone.js';
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(po, s);
-    })();
-  </script>
-  <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-680699-1']);
-    _gaq.push(['_setDomainName', 'filippovitale.it']);
-    _gaq.push(['_trackPageview']);
+<script src="/static/js/lib/bootstrap-3.0.0.min.js"></script>
+<script type="text/javascript">
+  (function () {
+    var po = document.createElement('script');
+    po.type = 'text/javascript';
+    po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(po, s);
+  })();
+</script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-680699-1']);
+  _gaq.push(['_setDomainName', 'filippovitale.it']);
+  _gaq.push(['_trackPageview']);
 
     (function () {
       var ga = document.createElement('script');

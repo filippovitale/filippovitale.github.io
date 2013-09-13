@@ -1,12 +1,13 @@
 url: http://filippovitale.it
 title: Morning comes too early and nighttime falls too late
-subtitle: Reincarnation of my old blog
+subtitle: Merging blog, site and lab with Jekyll and GitHub Paged
 pygments: true
 
-author :
-  name : Filippo Vitale
-  github : filippovitale
-  twitter : filippovitale
+author:
+  name: Filippo Vitale
+  github: filippovitale
+  twitter: filippovitale
+  slideshare: filippovitale
 
 root: /
 permalink: /article/:title/
