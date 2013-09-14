@@ -6,9 +6,9 @@
 	From: Bologna, Italy
 
 /* THANKS */
-    Responsive Ninja: Marco Ramires
+  Responsive Ninja: Marco Ramires
 
 /* SITE */
 	Language: English
 	Doctype: HTML5
-    Technology colophon: HTML5, CSS3, Modernizr
+  Technology colophon: HTML5, CSS3, Modernizr
