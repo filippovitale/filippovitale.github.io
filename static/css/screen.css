@@ -14,8 +14,8 @@ a:hover, a:focus {
 
 html, body {
   height: 100%;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 /* ********************************** Home ********************************** */
@@ -35,7 +35,7 @@ html, body {
   color: #ffffff;
   display: block;
   vertical-align: middle;
-  text-shadow: black 0px 0px 5px;
+  text-shadow: black 0 0 5px;
 }
 
 #home h2 span {
@@ -49,7 +49,7 @@ html, body {
   color: #ffffff;
   display: block;
   vertical-align: middle;
-  text-shadow: rgba(0, 0, 0, .8) 0px 0px 10px;
+  text-shadow: rgba(0, 0, 0, .8) 0 0 10px;
 }
 
 #home footer {
