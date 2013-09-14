@@ -33,11 +33,11 @@ category : personal
 * https://github.com/soulwire
 * 
 
-## Layout
+#### Layout
 * find out why comment div is not responsive
 ** http://r7.web.id/get-responsive-google-plus-comments
 
-## Typography
+#### Typography
 ```
 /* smashing magazine */
 color: rgb(51, 51, 51);
@@ -57,11 +57,11 @@ line-height: 31.5px;
 text-shadow: rgba(0, 0, 0, 0.498039) 0px 1px 3px;
 ```
 
-## SEO
+#### SEO
 * http://www.google.com/webmasters/tools/richsnippets
 * http://polldaddy.com/features/#ratings
 
-## Special Effect
+#### Special Effect
 * http://wagerfield.github.io/parallax/
 * http://marty.com
 
