@@ -1,5 +1,4 @@
 /* *************************** Bootstrap Overrides ************************** */
-/*  */
 
 a {
   color: #333;
@@ -54,22 +53,11 @@ html, body {
 }
 
 #home footer {
-  margin-top: 30%;
+  margin-top: 20%;
 }
 
 #home footer p {
   color: #999;
-}
-
-#hero {
-  display: table;
-  height: 90%;
-}
-
-#hero > div {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
 }
 
 /* ********************************** Site ********************************** */
