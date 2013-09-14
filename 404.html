@@ -1,29 +1,32 @@
-<html>
-  <head>
-    <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700' rel='stylesheet' type='text/css'>
-    <style>
-      body {
-      font-family: 'Yanone Kaffeesatz', sans-serif;
-      font-size: 50px;
-      color: #ff9900;
-      background-color: #36426F;
-      }
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  <meta name="author" content="Filippo Vitale"/>
+  <meta name="description" content="Page not found"/>
+  <meta name="viewport" content="width=device-width"/>
 
-      .centered-box {
-      width: 500px;
-      height: 500px;
-      left: 50%;
-      top: 50%;
-      margin-top: -250px;
-      margin-left: -250px;
-      position: fixed;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="centered-box">
-      Sorry but today I can't make it<br>
-      Please come again tomorrow
-    </div>
-  </body>
+  <title>Page not found - 404</title>
+
+  <style type="text/css">
+    body {
+      background-color: #000000;
+    }
+
+    .centered-box {
+      text-align: center;
+      padding: 100px;
+    }
+  </style>
+</head>
+<body>
+<div class="centered-box">
+  <img src="/static/img/amiga_guru_meditation.gif" alt="404 page" width="652" height="93"/>
+</div>
+<script type="text/javascript">
+  document.body.addEventListener('click', function () {
+    console.log("click!");
+  });
+</script>
+</body>
 </html>
