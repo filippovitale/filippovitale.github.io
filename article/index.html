@@ -12,6 +12,20 @@ description: Articles by Filippo Vitale
 
   <div class="col-lg-6 col-xs-12 col-lg-push-3 text-center text-center">
     <h1>Recent Articles</h1>
+
+    {% for post in site.posts %}
+    <section class="post panel panel-default">
+      <div class="panel-heading">
+        <a href="{{ post.url }}">
+          <strong>{{ post.title }}</strong> —
+          <time datetime="{{ post.date | date:'%F' }}" pubdate>{{ post.date | date:'%e %b %Y' }}</time>
+        </a>
+      </div>
+      <div class="panel-body">
+        <p><a href="{{ post.url }}">{{ post.description }}</a></p>
+      </div>
+    </section>
+    {% endfor %}
   </div>
 
 </div>
