@@ -1,7 +1,7 @@
 ---
-layout: post
-category : personal
-description: Filippo Vitale Homepage
+layout: article
+category: personal
+description: Filippo Vitale first post of the new blog
 ---
 This is my first post of my new blog
 

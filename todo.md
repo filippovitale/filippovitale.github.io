@@ -65,3 +65,5 @@ text-shadow: rgba(0, 0, 0, 0.498039) 0px 1px 3px;
 * http://wagerfield.github.io/parallax/
 * http://marty.com
 
+#### Presentation
+* tips for presos https://v.fhtr.net/?page=view&id=523436e2a156ec0200000002#1
