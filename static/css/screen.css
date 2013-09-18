@@ -54,10 +54,11 @@ html, body {
 
 #home footer {
   margin-top: 20%;
+  color: #bfd8fc;
 }
 
-#home footer p {
-  color: #999;
+#home footer a {
+  color: #bfd8fc;
 }
 
 /* ********************************** Site ********************************** */
