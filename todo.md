@@ -25,13 +25,12 @@ category : personal
 * https://plus.google.com/authorship
 * comment
 * https://developers.google.com/+/web/+1button/
-* prefetch DNS ```<link rel="dns-prefetch" href="//fonts.googleapis.com">```
+* prefetch DNS `<link rel="dns-prefetch" href="//fonts.googleapis.com">`
 * Load Webfonts asynchronously
-* ```<link rel="alternate" type="application/atom+xml" title="My Weblog feed" href="/feed/" />```
-* ```<link rel="search" type="application/opensearchdescription+xml" title="My Weblog search" href="opensearch.xml" />```
+* `<link rel="alternate" type="application/atom+xml" title="My Weblog feed" href="/feed/" />`
+* `<link rel="search" type="application/opensearchdescription+xml" title="My Weblog search" href="opensearch.xml" />`
 * http://soulwire.co.uk/experiments
 * https://github.com/soulwire
-* 
 
 #### Layout
 * find out why comment div is not responsive
