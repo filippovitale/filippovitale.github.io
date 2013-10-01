@@ -35,6 +35,8 @@ category : personal
 #### Layout
 * find out why comment div is not responsive
 ** http://r7.web.id/get-responsive-google-plus-comments
+* menu
+** http://tympanus.net/Tutorials/AnimatedBorderMenus/index2.html#
 
 #### Typography
 ```
