@@ -68,3 +68,9 @@ text-shadow: rgba(0, 0, 0, 0.498039) 0px 1px 3px;
 
 #### Presentation
 * tips for presos https://v.fhtr.net/?page=view&id=523436e2a156ec0200000002#1
+
+####
+* Procedural Canvas
+** http://remysharp.com/2013/08/14/jsbin-5th-birthday/
+** http://jsbin.com/irisag/2
+** http://jsbin.com/irisag/11
