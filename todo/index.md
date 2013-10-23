@@ -24,17 +24,18 @@ layout: default
 * https://plus.google.com/authorship
 * comment
 * https://developers.google.com/+/web/+1button/
-* prefetch DNS ```<link rel="dns-prefetch" href="//fonts.googleapis.com">```
+* prefetch DNS `<link rel="dns-prefetch" href="//fonts.googleapis.com">`
 * Load Webfonts asynchronously
-* ```<link rel="alternate" type="application/atom+xml" title="My Weblog feed" href="/feed/" />```
-* ```<link rel="search" type="application/opensearchdescription+xml" title="My Weblog search" href="opensearch.xml" />```
+* `<link rel="alternate" type="application/atom+xml" title="My Weblog feed" href="/feed/" />`
+* `<link rel="search" type="application/opensearchdescription+xml" title="My Weblog search" href="opensearch.xml" />`
 * http://soulwire.co.uk/experiments
 * https://github.com/soulwire
-* 
 
 #### Layout
 * find out why comment div is not responsive
 ** http://r7.web.id/get-responsive-google-plus-comments
+* menu
+** http://tympanus.net/Tutorials/AnimatedBorderMenus/index2.html#
 
 #### Typography
 ```
@@ -66,3 +67,9 @@ text-shadow: rgba(0, 0, 0, 0.498039) 0px 1px 3px;
 
 #### Presentation
 * tips for presos https://v.fhtr.net/?page=view&id=523436e2a156ec0200000002#1
+
+####
+* Procedural Canvas
+** http://remysharp.com/2013/08/14/jsbin-5th-birthday/
+** http://jsbin.com/irisag/2
+** http://jsbin.com/irisag/11
