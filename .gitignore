@@ -1,3 +1,4 @@
 # no files to be ignored yet!
 _site
 .idea
+.DS_Store

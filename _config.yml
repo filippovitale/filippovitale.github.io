@@ -1,7 +1,9 @@
 url: http://filippovitale.it
 title: Morning comes too early and nighttime falls too late
-subtitle: Merging blog, site and lab with Jekyll and GitHub Paged
-pygments: true
+subtitle: Merging blog, site and lab with Jekyll and GitHub Pages
+
+safe: true
+highlighter: pygments
 
 author:
   name: Filippo Vitale
