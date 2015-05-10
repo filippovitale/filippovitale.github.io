@@ -1,4 +1,4 @@
-var url = 'http://filippovitale.it/';
+var url = 'http://localhost:4000/'; // 'https://filippovitale.it/';
 var ext = '.png'; // pdf or png
 var now = new Date();
 
@@ -7,7 +7,7 @@ var vps = [
            { width: 1439, height: 801 }, // macbook retina
            { width: 1024, height: 768 }, // ipad (landscape)
            { width: 960, height: 431 }, // nexus 7 (landscape)
-           
+
            { width: 768, height: 1024 }, // ipad (portrait)
            { width: 600, height: 791 }, // nexus 7 (portrait)
            { width: 360, height: 511 } // nexus 5 (portrait)
