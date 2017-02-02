@@ -1,7 +1,7 @@
 url: http://filippovitale.it
 title: Morning comes too early and nighttime falls too late
 
-highlighter: pygments
+highlighter: rouge
 
 author:
   name: Filippo Vitale
