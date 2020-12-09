@@ -1,0 +1,168 @@
+---
+description: How-to about configuring Emacs with "SICStus Prolog development system"
+---
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Integrare SICStus in Emacs</title>
+  <style type="text/css"></style>
+</head>
+<body lang="it">
+
+<h1>Emacs e SICStus</h1>
+
+<div>
+  Author: <a href="https://plus.google.com/113126618814932185508?rel=author" rel="author">By {{ site.author.name }}</a>
+  <a href="https://plus.google.com/101212230991520050865" rel="publisher">Find us on Google+</a>
+  - Date: {{ page.date | date:'%e %b %Y' }}
+</div>
+
+<div style="border: solid 6px silver; padding: 4px; margin: 12px;">
+  The original URL of this tutorial is:
+  <a href="http://www-lia.deis.unibo.it/Courses/LinguaggiSimbolici/Emacs_SICStus.htm">
+    http://www-lia.deis.unibo.it/Courses/LinguaggiSimbolici/Emacs_SICStus.htm
+  </a>
+</div>
+
+<h3>Obbiettivo</h3>
+
+Lo scopo di questa documentazione � quello di installare e configurare un ambiente integrato e completamente
+personalizzabile per la programmazione PROLOG. L'ambiente � basato sull'editor Emacs (chiamarlo editor � forse un po'
+limitativo) e sul compilatore/interprete PROLOG SICStus. Questo tutorial l'ho creato utilizzando Emacs 21.1 e SICStus
+3.8.2 su sistema operativo Windows XP professional ed. ma � facilmente adattabile ad altre piattaforme e versioni.
+
+<h3>Prerequisiti</h3>
+
+<ol type="1">
+  <li>Installazione di Emacs<br><br>
+    <strong>-</strong> Download del file <em>emacs-XX.X-bin-i386.tar.gz</em> (12Mb circa) <a
+      href="ftp://ftp.gnu.org/gnu/windows/emacs/">ftp://ftp.gnu.org/gnu/windows/emacs/</a> (in caso di congestione �
+    meglio cercare in un <a href="http://www.gnu.org/order/ftp.html">sito FTP mirror</a>)<br>
+    <strong>-</strong> Scompattare il file nella cartella di <em>installazione definitiva</em><br>
+    <strong>-</strong> Eseguire il programma <em>bin/addpm.exe</em> per completare l'installazione e creare i
+    collegamenti nel men� di avvio<br>
+
+    <br>
+  </li>
+  <li>Installazione di SICStus<br><br>
+    <strong>-</strong> Scaricare ed installare il pacchetto autoestraente dal sito del corso di <a
+      href="http://www-lia.deis.unibo.it/Courses/LinguaggiSimbolici/strumenti.html">linguaggi simbolici</a><br>
+  </li>
+</ol>
+
+<h3>Configurazione</h3>
+
+Per prima cosa compiliamo i file lisp gi� presenti in SICStus per comunicare con Emacs:
+<ol type="a">
+  <li>Eseguiamo Emacs<br>(il simbolo <strong>M-x</strong> corrisponde alla combinazione di tasti Alt-X)
+  </li>
+  <li>M-x byte-compile-file [invio] c:/Programmi/SICStus Prolog/emacs/pltrace.el [invio]
+  </li>
+  <li>M-x byte-compile-file [invio] c:/Programmi/SICStus Prolog/emacs/prolog.el [invio]
+  </li>
+  <li>M-x byte-compile-file [invio] c:/Programmi/SICStus Prolog/emacs/sicstus-support.el [invio]
+    <br>(modificare <strong>c:/Programmi/SICStus Prolog</strong> con la corretta directory di installazione; si puo'
+    utilizzare l'autocoposizione mediante il tasto [TAB])
+  </li>
+</ol>
+
+Settare le seguenti variabili di ambiente (per sist.op. Win NT/2000/XP: Pannello di controllo-&gt;Sistema-&gt;Avanzate-&gt;Variabili
+d'ambiente)
+<ol type="a">
+  <li>HOME -&gt; La vostra home directory preferita (ad es. c:/home)
+  </li>
+  <li>EPROLOG -&gt; C:\Programmi\SICStus Prolog\bin\sicstus.exe (impostate la directory giusta)
+  </li>
+  <li>INFOPATH -&gt; C:\Programmi\SICStus Prolog\doc\info (impostate la directory giusta)
+  </li>
+</ol>
+
+Crea (nella tu directory settata con <strong>HOME</strong>) ed edita il file <strong>_emacs</strong> aggiungendo:
+
+<pre>(global-font-lock-mode t) ; GNU Emacs
+(setq font-lock-maximum-decoration t)
+(setq load-path (cons (expand-file-name "C:/Programmi/SICStus Prolog/emacs") load-path))
+(autoload 'run-prolog "prolog" "Start a Prolog sub-process." t)
+(autoload 'prolog-mode "prolog" "Major mode for editing Prolog programs." t)
+(setq prolog-use-sicstus-sd t)
+(setq prolog-align-comments-flag t)
+(setq prolog-indent-width 3)
+(setq prolog-electric-dot-flag t)
+(setq prolog-electric-underscore-flag t)
+(setq auto-mode-alist (cons '("\\.pl$" . prolog-mode) auto-mode-alist))
+</pre>
+(Ricordarsi di editare la terza riga inserendo la directory corretta)<br><br>
+
+<!-- M-x customize-group
+info
+
+cerca:
+Info Additional Directory List: Show
+   State: hidden, invoke "Show" in the previous line to show.
+List of additional directories to search for Info documentation files. More
+
+scegli Show -> Ins -> compila con C:\Programmi\SICStus Prolog\doc\info -> State -> Save for future session
+ -->
+
+<!-- Le variabili di Emacs possono essere editate run-time: M-x set-variable [invio] VariableName [invio] Value [invio] -->
+
+<h3>Utilizzo</h3>
+
+Se si fanno programmi su piu' moduli e' utile iniziare i file con:
+<pre>%%% -*- Mode: Prolog; Module: ModuleName; -*-</pre>
+
+<br><br>Per avere il Source level debugging durante i trace dei programmi:
+<pre>(men� di Emacs con un file prolog aperto) -&gt; Prolog -&gt; Source level debugging -&gt; Active</pre>
+
+<br><br>Finalmente, per vedere girare SICStus dentro Emacs: (C-c equivale a [CTRL-c], C-u a [CTRL-u])
+<pre>C-c [invio]		per lanciarlo
+C-u C-c [invio]		per riavviarlo
+</pre>
+
+<br><br>Infine una serie di comandi emacs utili.
+<pre>C-c C-f	       Consult file
+C-c C-b	       Consult buffer
+C-c C-r	       Consult region
+C-c C-p	       Consult predicate
+C-c C-c f      Compile file
+C-c C-c	b      Compile buffer
+C-c C-c	r      Compile region
+C-c C-c	p      Compile predicate
+
+M-n	       Go to the next clause.
+M-p	       Go to the previous clause.
+M-a	       Go to beginning of clause.
+M-e	       Go to end of clause.
+M-C-c	       Mark clause.
+M-C-a	       Go to beginning of predicate.
+M-C-e	       Go to end of predicate.
+M-C-h	       Mark predicate.
+M-{	       Go to the previous paragraph (i.e. empty line).
+M-}	       Go to the next paragraph (i.e. empty line).
+M-h	       Mark paragraph.
+M-C-n	       Go to matching right parenthesis.
+M-C-p	       Go to matching left parenthesis.
+M-;	       Crea un commento a comment-column
+C-c C-t	       Enable tracing
+C-u C-c C-t    Disable tracing
+
+C-c C-d	       disable debugging
+C-u C-c C-d    enable debugging
+C-c C-z	       enable zipping
+C-u C-c C-z    disable zipping
+C-x SPC	       set a line breakpoint
+C-u C-x SPC    remove a line breakpoint
+C-c C-s	       Insert the PredSpec of the current predicate into the code.
+C-c C-n	       Insert the name of the current predicate into the code.
+C-c C-v a      Convert all variables in a region to anonymous variables.
+C-c ?	       Help on predicate.
+</pre>
+<br><br>
+<hr width="80%">
+<div align="right"><font size="-1">
+  Filippo Vitale (@filippovitale) - 2 Gennaio 2002 (versione 1.0)
+</font></div>
+
+</body>
+</html>

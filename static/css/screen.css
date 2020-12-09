@@ -1,0 +1,144 @@
+/* *************************** Bootstrap Overrides ************************** */
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  color: #333;
+  text-decoration: underline;
+}
+
+/* ********************************* Common ********************************* */
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  /*background-color: rgb(161, 178, 202);*/
+}
+
+/* ********************************** Home ********************************** */
+
+#home-background {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+#home {
+  height: 100%;
+  padding-top: 12px;
+}
+
+#home h2 {
+  color: #ffffff;
+  display: block;
+  vertical-align: middle;
+  text-shadow: black 0 0 5px;
+}
+
+#home h2 span {
+  letter-spacing: -1px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  line-height: 1.85em;
+}
+
+#home h3 {
+  color: #ffffff;
+  display: block;
+  vertical-align: middle;
+  text-shadow: rgba(0, 0, 0, .8) 0 0 10px;
+}
+
+#home footer {
+  margin-top: 20%;
+  color: #bfd8fc;
+}
+
+#home footer a {
+  color: #bfd8fc;
+}
+
+/* ********************************** Site ********************************** */
+
+#Logo {
+  background-color: #000;
+  width: 100px;
+  text-align: center;
+  /*padding: 15px 0;*/
+  border: 1px solid #666;
+
+}
+
+#Logo h1 {
+  color: #fff;
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+#Side {
+  height: 100%;
+  padding-top: 20px;
+}
+
+#Main {
+  height: 100%;
+  overflow: scroll;
+}
+
+@media (max-width: 767px) {
+  #Main {
+    overflow: visible;
+  }
+
+  #Side {
+    height: 80%;
+  }
+
+  #home {
+    overflow: scroll;
+    height: 100%;
+  }
+}
+
+/*****************************************************************************/
+/*
+/* Posts
+/*
+/*****************************************************************************/
+
+/* standard */
+#post pre {
+  border: 1px solid #ddd;
+  background-color: #e3e3e3;
+  padding: 0 .4em;
+}
+
+#post ul, #post ol {
+  margin-left: 1.35em;
+}
+
+#post code {
+  border: 1px solid #ddd;
+  background-color: #e3e3e3;
+  padding: 0 .2em;
+}
+
+#post pre code {
+  border: none;
+}
+
+/* terminal */
+#post pre.terminal {
+  border: 1px solid #000;
+  background-color: #333;
+  color: #FFF;
+}
+
+#post pre.terminal code {
+  background-color: #333;
+}

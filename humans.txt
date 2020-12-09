@@ -1,0 +1,14 @@
+/* TEAM */
+	Chef: Filippo Vitale
+	Contact: before @gmail.com --> fvitale
+	Twitter: @filippovitale
+	Location: Ann Arbor, MI (USA)
+	From: Bologna, Italy
+
+/* THANKS */
+  Responsive Ninja: Marco Ramires
+
+/* SITE */
+	Language: English
+	Doctype: HTML5
+  Technology colophon: HTML5, CSS3, Modernizr

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><html class="no-js"><![endif]-->
+<head>
+  <meta charset="utf-8"/>
+  <meta name="author" content="{{ site.author.name }}"/>
+  <meta name="description" content="{{ page.description }}" />
+  <meta name="viewport" content="width=device-width" />
+
+  <title>{{ page.title }}</title>
+
+  <link rel="stylesheet" href="/static/css/lib/bootstrap-3.0.0.min.css" />
+  <link rel="stylesheet" href="/static/css/syntax.css" />
+  <link rel="stylesheet" href="/static/css/screen.css" />
+
+  <!--[if lt IE 9]><script src="/static/js/lib/html5-shiv-3.6.2pre.js"></script><![endif]-->
+  <script src="/static/js/lib/modernizr-2.6.2.min.js"></script>
+  <script src="/static/js/lib/jquery-2.0.0.min.js"></script>
+  <script src="/static/js/lib/jquery.backstretch-2.0.4.min.js"></script>
+</head>
+<body>
+
+{{content}}
+
+<script src="/static/js/lib/bootstrap-3.0.0.min.js"></script>
+<script type="text/javascript">
+  (function () {
+    var po = document.createElement('script');
+    po.type = 'text/javascript';
+    po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(po, s);
+  })();
+</script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-680699-1']);
+  _gaq.push(['_setDomainName', 'filippovitale.it']);
+  _gaq.push(['_trackPageview']);
+
+    (function () {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</body>
+</html>
