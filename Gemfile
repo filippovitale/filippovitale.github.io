@@ -1,6 +1,8 @@
 source "https://rubygems.org"
+
+# get the version from https://pages.github.com/versions/
+gem "github-pages", "~> 214", group: :jekyll_plugins
 # To upgrade, run `bundle update github-pages`.
-gem "github-pages", "~> 209", group: :jekyll_plugins
 
 # https://pages.github.com/versions/
 #gem "jekyll", "~> 3.9.0"
